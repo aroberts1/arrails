@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Arrails</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+	  <title>Arrails</title>
+	  <%= stylesheet_link_tag    "application", :media => "all" %>
+	  <%= javascript_include_tag "application" %>
+	  <%= csrf_meta_tags %>
+	  <%= tag :meta, name: "viewport", content: "width=device-width, initial-scale=1.0" %> 
+	</head>
 
-<%= yield %>
+		<%= render 'layouts/header' %>
 
-</body>
+	<head>
+
+	  <%= tag :meta, name: "viewport", content: "width=device-width, initial-scale=1.0" %> 
+
+	</head>
+
+	<body>
+
+	<%= yield %>
+
+		<%= render 'layouts/footer' %>	
+
+
+	</body>
 </html>
