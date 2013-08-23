@@ -20,7 +20,8 @@
         <li><%= link_to "Information", information_path %></li>  
       </ul>
       <ul class="nav pull-right">
-        <li><%= link_to "Sign In", '#' %></li>
+        <li><%= link_to "Sign In", new_user_session_path %></li>
+        <li><%= link_to "Logout" , destroy_user_session_path, method: :delete %></li>
       </ul>
         <!-- .nav, .navbar-search, .navbar-form, etc -->
       </div>
