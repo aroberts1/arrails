@@ -11,7 +11,7 @@ Arrails::Application.routes.draw do
   get 'about' => 'pages#about'
   get 'information' => 'pages#information'
 
-  root :to => 'pages#home'
+  root :to => 'pins#index'
 
   
 
